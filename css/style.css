@@ -2267,8 +2267,9 @@ a.smallLink {
 /*--- Add Scrollbar to Subject Modal Window ---*/
 
 .modalScroll {
-	overflow: scroll;
+	overflow-y: auto;
 	height: max-height: 75vh;
+	overflow-x: hidden !important;
 }
 
 .newPaymentTable th {
@@ -3272,4 +3273,5 @@ input#archiveInd {
 	overflow-y: auto !important;
 	top: 5vh !important;
 	margin-top: 0px !important;
+	overflow-x: hidden !important;
 }
