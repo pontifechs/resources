@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: messages\n"
-"POT-Creation-Date: 2016-06-16 08:31-0600\n"
-"PO-Revision-Date: 2016-06-16 08:36-0600\n"
+"POT-Creation-Date: 2016-06-16 16:02-0600\n"
+"PO-Revision-Date: 2016-06-17 09:33-0600\n"
 "Last-Translator: Paul Poulain <paul.poulain@biblibre.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -204,15 +204,15 @@ msgstr "Erreur - Organisation non-trouvée. Utilisez l’auto-complétion."
 msgid "Error - User is required"
 msgstr "Erreur - l'utilisateur est obligatoire"
 
-#: js/forms/userGroupForm.js:115 ajax_forms/getAdminUserGroupForm.php:121
+#: js/forms/userGroupForm.js:117 ajax_forms/getAdminUserGroupForm.php:121
 msgid "remove user from group"
 msgstr "Retirer un utilisateur du groupe"
 
-#: js/forms/userGroupForm.js:115
+#: js/forms/userGroupForm.js:118
 msgid "remove from group"
 msgstr "Retirer du groupe"
 
-#: js/forms/userGroupForm.js:158
+#: js/forms/userGroupForm.js:163
 msgid "Group name must be entered to continue."
 msgstr "Le nom du groupe doit être entré avant de continuer."
 
@@ -220,15 +220,16 @@ msgstr "Le nom du groupe doit être entré avant de continuer."
 msgid "Error - Step name is required"
 msgstr "Erreur - Le nom de l'étape est obligatoire"
 
-#: js/forms/workflowForm.js:199 ajax_forms/getAdminWorkflowForm.php:238
+#: js/forms/workflowForm.js:201 js/forms/workflowForm.js:202
+#: ajax_forms/getAdminWorkflowForm.php:238
 msgid "remove this step"
 msgstr "Supprimer cette étape"
 
-#: js/forms/workflowForm.js:368
+#: js/forms/workflowForm.js:373
 msgid "Please add at least one step to this workflow."
 msgstr "Veuillez ajouter au moins une étape à ce workflow."
 
-#: js/forms/workflowForm.js:374
+#: js/forms/workflowForm.js:379
 msgid ""
 "Please click the Add button to the first step before submitting this "
 "workflow."
@@ -236,11 +237,11 @@ msgstr ""
 "Cliquez sur le bouton Ajouter de la première étape avant de valider ce "
 "workflow."
 
-#: js/index.js:113
+#: js/index.js:112
 msgid "Processing..."
 msgstr "Traitement en cours..."
 
-#: js/index.js:241 index.php:357
+#: js/index.js:240 index.php:357
 msgid "more options..."
 msgstr "Plus d'options..."
 
@@ -473,37 +474,37 @@ msgid "An issue must be associated with an organization or resource(s)."
 msgstr ""
 "Un incident doit être associé à une organisation ou à une/des ressource(s)."
 
-#: js/resource.js:712
+#: js/resource.js:706
 msgid "Do you really want to delete this contact?"
 msgstr "Voulez-vous vraiment supprimer ce contact ?"
 
-#: js/resource.js:730
+#: js/resource.js:724
 msgid "Do you really want to delete this account?"
 msgstr "Voulez-vous vraiment supprimer ce compte ?"
 
-#: js/resource.js:748
+#: js/resource.js:742
 msgid "Do you really want to delete this attachment?"
 msgstr "Voulez-vous vraiment supprimer cette pièce jointe ?"
 
-#: js/resource.js:768
+#: js/resource.js:762
 msgid "Do you really want to delete this resource?"
 msgstr "Voulez-vous vraiment supprimer cette ressource ?"
 
-#: js/resource.js:786
+#: js/resource.js:780
 msgid "Do you really want to delete this resource and all its children?"
 msgstr ""
 "Voulez-vous vraiment supprimer cette ressource et tous ses ressources "
 "subsidiaires ?"
 
-#: js/resource.js:807
+#: js/resource.js:801
 msgid "Do you really want to remove this Subject?"
 msgstr "Voulez-vous vraiment supprimer ce Sujet ?"
 
-#: js/resource.js:825
+#: js/resource.js:819
 msgid "Do you really want to delete this note?"
 msgstr "Voulez-vous vraiment supprimer cette remarque ?"
 
-#: js/resource.js:868
+#: js/resource.js:861
 msgid ""
 "Warning!  You are about to remove any steps that have been started and "
 "completed.  Are you sure you wish to continue?"
@@ -511,13 +512,22 @@ msgstr ""
 "Attention ! Vous êtes sur le point de supprimer toutes les étapes qui ont "
 "été commencées et terminées. Êtes-vous sûr  de vouloir continuer ?"
 
-#: js/resource.js:885
+#: js/resource.js:878
 msgid ""
 "Do you really want to mark this resource complete?  This action cannot be "
 "undone."
 msgstr ""
 "Êtes-vous sûr de vouloir marquer cette ressource comme Terminée ? Cette "
 "action ne peut être annulée."
+
+#: js/resource.js:892
+msgid ""
+"Do you really want to delete this step? If other steps depended on this one, "
+"they will be started upon deletion. This action cannot be undone"
+msgstr ""
+"Êtes-vous sûr de vouloir effacer cette étape? Si d’autres étapes dépendent "
+"de celle-ci, elles seront déclenchées après l’effacement. Cette action est "
+"impossible d’annuler."
 
 #: admin.php:22 admin.php:40
 msgid "Administration"
@@ -764,6 +774,7 @@ msgstr "Site(s) gérant(s)"
 #: ajax_forms/getLicenseForm.php:191 ajax_forms/getNewDowntimeForm.php:115
 #: ajax_forms/getNewIssueForm.php:132 ajax_forms/getNewResourceForm.php:295
 #: ajax_forms/getNoteForm.php:61 ajax_forms/getOrderForm.php:160
+#: ajax_forms/getResourceStepForm.php:64
 #: ajax_forms/getUpdateProductForm.php:429 resources/cataloging_edit.php:102
 msgid "submit"
 msgstr "Envoyer"
@@ -786,7 +797,8 @@ msgstr "Envoyer"
 #: ajax_forms/getNewDowntimeForm.php:116 ajax_forms/getNewDowntimeForm.php:125
 #: ajax_forms/getNewIssueForm.php:133 ajax_forms/getNewIssueForm.php:142
 #: ajax_forms/getNewResourceForm.php:296 ajax_forms/getNoteForm.php:62
-#: ajax_forms/getOrderForm.php:161 ajax_forms/getResourceSubjectForm.php:48
+#: ajax_forms/getOrderForm.php:161 ajax_forms/getResourceStepForm.php:65
+#: ajax_forms/getResourceSubjectForm.php:48
 #: ajax_forms/getUpdateProductForm.php:430 importFunds.php:64
 #: resources/cataloging_edit.php:103
 msgid "cancel"
@@ -1391,10 +1403,10 @@ msgstr "Historique:"
 #: ajax_htmldata/getProductDetails.php:148
 #: ajax_htmldata/getProductDetails.php:150
 #: ajax_htmldata/getProductDetails.php:422
-#: ajax_htmldata/getRoutingDetails.php:48
-#: ajax_htmldata/getRoutingDetails.php:50
-#: ajax_htmldata/getRoutingDetails.php:77
-#: ajax_htmldata/getRoutingDetails.php:79 resources/cataloging.php:223
+#: ajax_htmldata/getRoutingDetails.php:53
+#: ajax_htmldata/getRoutingDetails.php:55
+#: ajax_htmldata/getRoutingDetails.php:88
+#: ajax_htmldata/getRoutingDetails.php:90 resources/cataloging.php:223
 #: summary.php:226 summary.php:252 summary.php:407 summary.php:522
 #: summary.php:597 summary.php:719 summary.php:832
 msgid " by "
@@ -1602,6 +1614,26 @@ msgstr "Activer les messages d'alerte"
 #: ajax_forms/getOrderForm.php:111
 msgid "Purchasing Site(s)"
 msgstr "Site(s) d'achat(s)"
+
+#: ajax_forms/getResourceStepForm.php:25
+msgid "Edit Resource Step"
+msgstr "Éditez l’étape de ressource"
+
+#: ajax_forms/getResourceStepForm.php:32
+msgid "Reassign Resource Step"
+msgstr "Réaffectez l’étape de ressource"
+
+#: ajax_forms/getResourceStepForm.php:40
+msgid "Step name: "
+msgstr "Nom de l’étape: "
+
+#: ajax_forms/getResourceStepForm.php:42
+msgid "Group: "
+msgstr "Groupe"
+
+#: ajax_forms/getResourceStepForm.php:53
+msgid "Apply to all later steps?"
+msgstr "Appliquez à toutes les étapes suivantes?"
 
 #: ajax_forms/getResourceSubjectForm.php:7
 msgid "Add General / Detail Subject Link"
@@ -2136,7 +2168,7 @@ msgid "Routing Step"
 msgstr "Étape de routage"
 
 #: ajax_htmldata/getOutstandingQueue.php:23
-#: ajax_htmldata/getRoutingDetails.php:23
+#: ajax_htmldata/getRoutingDetails.php:24
 msgid "Start Date"
 msgstr "Date de début"
 
@@ -2262,33 +2294,37 @@ msgstr "Non-entré dans le workflow."
 msgid "Step"
 msgstr "Étape"
 
-#: ajax_htmldata/getRoutingDetails.php:22
+#: ajax_htmldata/getRoutingDetails.php:23
 msgid "Group"
 msgstr "Groupe"
 
-#: ajax_htmldata/getRoutingDetails.php:24
+#: ajax_htmldata/getRoutingDetails.php:25
 msgid "Complete"
 msgstr "Terminé"
 
-#: ajax_htmldata/getRoutingDetails.php:55
+#: ajax_htmldata/getRoutingDetails.php:26
+msgid "Delete"
+msgstr "Effacer"
+
+#: ajax_htmldata/getRoutingDetails.php:60
 msgid "mark complete"
 msgstr "Marquer comme terminé"
 
-#: ajax_htmldata/getRoutingDetails.php:77
-#: ajax_htmldata/getRoutingDetails.php:79
+#: ajax_htmldata/getRoutingDetails.php:88
+#: ajax_htmldata/getRoutingDetails.php:90
 msgid "Workflow completed on "
 msgstr "Workflow terminé le "
 
-#: ajax_htmldata/getRoutingDetails.php:83
-#: ajax_htmldata/getRoutingDetails.php:85
+#: ajax_htmldata/getRoutingDetails.php:94
+#: ajax_htmldata/getRoutingDetails.php:96
 msgid "Workflow restarted on "
 msgstr "Workflow redémarré le "
 
-#: ajax_htmldata/getRoutingDetails.php:95
+#: ajax_htmldata/getRoutingDetails.php:106
 msgid "restart workflow"
 msgstr "Redémarrer le workflow"
 
-#: ajax_htmldata/getRoutingDetails.php:96
+#: ajax_htmldata/getRoutingDetails.php:107
 msgid "mark entire workflow complete"
 msgstr "Marquer tout le workflow comme Terminé"
 
@@ -2689,6 +2725,14 @@ msgstr "Enfant"
 msgid "My Queue"
 msgstr "Ma file d'attente"
 
+#: resource.php:54
+msgid "Success!"
+msgstr "Opération réussie !"
+
+#: resource.php:54
+msgid "New resource added"
+msgstr "Nouvelle ressource ajoutée"
+
 #: resource.php:241
 msgid "Helpful Links"
 msgstr "Liens utiles"
@@ -2785,15 +2829,15 @@ msgstr "Nbre de fiches chargées"
 msgid "OCLC Holdings"
 msgstr "Fonds OCLC"
 
-#: sendAlerts.php:76
+#: sendAlerts.php:74
 msgid "No Resources found fitting alert day criteria"
 msgstr "Aucune ressource ne répond aux critères de messages de jours"
 
-#: sendAlerts.php:98
+#: sendAlerts.php:96
 msgid "No Issues found fitting alert day criteria"
 msgstr "Aucun incident trouvé répondant aux critères d'alerte de jour"
 
-#: sendAlerts.php:101
+#: sendAlerts.php:99
 msgid "Alerts not enabled in configuration.ini file"
 msgstr "Les messages ne sont pas activés dans le fichier configuration.ini"
 
@@ -2907,7 +2951,7 @@ msgstr "Statistiques d'utilisation"
 msgid "Management"
 msgstr "Gestion"
 
-#: user.php:103
+#: user.php:102
 msgid ""
 "Login is not working.  Check the .htaccess file and the "
 "remoteAuthVariableName specified in /admin/configuration.ini"
@@ -2953,12 +2997,6 @@ msgstr ""
 
 #~ msgid "English"
 #~ msgstr "Anglais"
-
-#~ msgid "Success!"
-#~ msgstr "Opération réussie !"
-
-#~ msgid "New resource added"
-#~ msgstr "Nouvelle ressource ajoutée"
 
 #~ msgid "CSV File import"
 #~ msgstr "Importer un fichier CSV"
